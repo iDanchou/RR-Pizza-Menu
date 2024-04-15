@@ -1,9 +1,14 @@
-import pizzaData from "./data";
+import "./index.css";
 
-function Pizza() {
+function Pizza(props) {
   return (
-    <div>
-      <h2>Pizza</h2>
+    <div className="pizza">
+      <img src={props.photoName} alt={props.name} />
+      <div>
+        <h3>{props.name}</h3>
+        <p>{props.ingredients}</p>
+        <span>{props.price}</span>
+      </div>
     </div>
   );
 }
