@@ -8,7 +8,9 @@ function Footer() {
 
   return (
     <footer className="footer">
-      {isOpen ? "We are open" : "We are closed"}
+      <p>
+        {isOpen ? "We are open!" : "We are closed"} {/* Ternary operator */}
+      </p>
     </footer>
   );
 }
