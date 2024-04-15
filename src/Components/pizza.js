@@ -1,3 +1,5 @@
+import pizzaData from "./data";
+
 function Pizza() {
   return (
     <div>
